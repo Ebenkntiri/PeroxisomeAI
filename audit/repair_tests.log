@@ -1,0 +1,9 @@
+test_full_nested_scope_and_determinism (test_repair.RepairTests.test_full_nested_scope_and_determinism) ... ok
+test_group_overlap_prevented (test_repair.RepairTests.test_group_overlap_prevented) ... ok
+test_invalid_residues_not_deleted (test_repair.RepairTests.test_invalid_residues_not_deleted) ... ok
+test_profiles_use_only_fit_input (test_repair.RepairTests.test_profiles_use_only_fit_input) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.363s
+
+OK

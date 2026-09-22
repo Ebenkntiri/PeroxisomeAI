@@ -1,0 +1,21 @@
+{
+  "artifact_type": "methods_schematic",
+  "status": "EXECUTED_FIGURE_RENDER_ONLY",
+  "biological_analysis": "NOT_RUN",
+  "source": "src/repair_model.py",
+  "source_sha256": "5859308cfcc57a779bf9d6b2028979f11754546fc61fc61db8848657d1053228",
+  "png_pixels": [
+    3600,
+    2880
+  ],
+  "png_dpi": 300,
+  "claims": [
+    "validate_sequences rejects invalid residues and short sequences",
+    "checked_splits preserves groups and checks classes",
+    "nested_cv uses separate fitting calibration and outer test indices",
+    "GridSearchCV fits BiProfileEncoder inside Pipeline",
+    "sigmoid fitting uses calibration records",
+    "outer test component scores are averaged and thresholded at 0.5"
+  ],
+  "figure_not_a_performance_result": true
+}

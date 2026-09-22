@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12in" height="9.6in" viewBox="0 0 1200 960">
+<rect width="1200" height="960" fill="white"/>
+<text x="40" y="54.44" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#172b3a">Repaired evaluation workflow</text>
+<text x="40" y="89.32" font-family="Arial, sans-serif" font-size="21" font-weight="400" fill="#805019">Implemented software core; biological evaluation has not been run</text>
+<rect x="40" y="115" width="1120" height="107" rx="10" fill="#fff7e9" stroke="#b6c6cf" stroke-width="2"/>
+<text x="58" y="146.4" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#172b3a">Required before a biological run</text>
+<text x="58" y="175.64" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#172b3a">Review labels, sequence integrity, terminal completeness and relatedness; declare the target population.</text>
+<text x="58" y="200.64" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#172b3a">Supply aligned sequences, binary labels and reviewed group IDs. These reviews remain pending.</text>
+<path d="M330,222 L330,251" stroke="#466577" stroke-width="3"/><polygon points="330,251 324,242 336,242" fill="#466577"/>
+<rect x="40" y="252" width="560" height="104" rx="10" fill="#eff6f8" stroke="#b6c6cf" stroke-width="2"/>
+<text x="58" y="283.4" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#172b3a">Validate input and define outer folds</text>
+<text x="58" y="312.64" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#172b3a">Reject invalid residues and sequences shorter than window W.</text>
+<text x="58" y="337.64" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#172b3a">Use stratified group folds; fail if a fold lacks either class.</text>
+<path d="M320,356 L320,384" stroke="#466577" stroke-width="3"/><polygon points="320,384 314,375 326,375" fill="#466577"/>
+<rect x="40" y="385" width="560" height="101" rx="10" fill="#eff6f8" stroke="#b6c6cf" stroke-width="2"/>
+<text x="58" y="416.4" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#172b3a">Within each outer training partition</text>
+<text x="58" y="445.64" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#172b3a">Create group-preserving fitting / calibration partitions.</text>
+<text x="58" y="470.64" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#172b3a">Keep the outer test partition outside all fitting steps.</text>
+<path d="M320,486 L320,514" stroke="#466577" stroke-width="3"/><polygon points="320,514 314,505 326,505" fill="#466577"/>
+<rect x="40" y="515" width="560" height="128" rx="10" fill="#eff6f8" stroke="#b6c6cf" stroke-width="2"/>
+<text x="58" y="546.4" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#172b3a">Tune using fitting records only</text>
+<text x="58" y="575.64" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#172b3a">Inner group folds: fit positive / negative sequence profiles</text>
+<text x="58" y="600.64" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#172b3a">inside the pipeline, then fit and tune an RBF SVM.</text>
+<text x="58" y="625.64" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#172b3a">Refit the selected pipeline on its fitting partition.</text>
+<path d="M320,643 L320,671" stroke="#466577" stroke-width="3"/><polygon points="320,671 314,662 326,662" fill="#466577"/>
+<rect x="40" y="672" width="560" height="103" rx="10" fill="#eff6f8" stroke="#b6c6cf" stroke-width="2"/>
+<text x="58" y="703.4" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#172b3a">Fit the calibration component</text>
+<text x="58" y="732.64" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#172b3a">Fit a sigmoid on the held-out calibration records.</text>
+<text x="58" y="757.64" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#172b3a">Apply pipeline and sigmoid to the untouched outer test.</text>
+<path d="M600,723 L645,723" stroke="#466577" stroke-width="3"/><polygon points="645,723 636,717 636,729" fill="#466577"/>
+<rect x="646" y="643" width="514" height="132" rx="10" fill="#eff6f8" stroke="#b6c6cf" stroke-width="2"/>
+<text x="664" y="674.4" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#172b3a">Combine and save outer-test outputs</text>
+<text x="664" y="703.64" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#172b3a">Average calibrated component scores for each record.</text>
+<text x="664" y="728.64" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#172b3a">Classify at the fixed score threshold of 0.5.</text>
+<text x="664" y="753.64" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#172b3a">Return classes, scores, fold IDs and fitting traces.</text>
+<rect x="646" y="252" width="514" height="138" rx="10" fill="#eaf4ee" stroke="#b6c6cf" stroke-width="2"/>
+<text x="664" y="283.4" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#172b3a">Partition boundary</text>
+<text x="664" y="312.64" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#172b3a">Outer test labels are not used to fit profiles,</text>
+<text x="664" y="337.64" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#172b3a">select hyperparameters or fit the sigmoid.</text>
+<text x="664" y="362.64" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#172b3a">Group separation applies at every split level.</text>
+<rect x="646" y="421" width="514" height="163" rx="10" fill="#fff7e9" stroke="#b6c6cf" stroke-width="2"/>
+<text x="664" y="452.4" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#172b3a">Still required after a biological run</text>
+<text x="664" y="481.64" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#172b3a">Check matched-window performance and uncertainty.</text>
+<text x="664" y="506.64" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#172b3a">Run justified permutation controls; reconcile counts.</text>
+<text x="664" y="531.64" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#172b3a">Assess calibration and limits of generalization.</text>
+<text x="664" y="556.64" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#172b3a">Generate result figures from saved record outputs.</text>
+<rect x="40" y="818" width="1120" height="94" rx="10" fill="#f3f5f7" stroke="#b6c6cf" stroke-width="2"/>
+<text x="58" y="849.64" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#172b3a">Scope: this schematic describes repository/src/repair_model.py, not the deployed web predictor.</text>
+<text x="58" y="879.64" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#172b3a">Synthetic software tests do not establish biological accuracy or calibrated localization probabilities.</text>
+</svg>

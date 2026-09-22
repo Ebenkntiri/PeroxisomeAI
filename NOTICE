@@ -1,0 +1,27 @@
+PeroxisomeAI submission repair
+
+Author metadata supplied by Ebenezer Kweku Ntiriakwa.
+
+PPero attribution
+Wang J, Wang Y, Gao C, Jiang L, Guo D (2017).
+PPero, a Computational Model for Plant PTS1 Type Peroxisomal Protein Prediction.
+PLOS ONE 12(1): e0168912. https://doi.org/10.1371/journal.pone.0168912
+Source: https://github.com/WangJueCUHK/PPero2.0
+Inspected commit: ec5a0ae44d959d55e71c34683019eda56f2df3b3
+Upstream repository licence: Apache License 2.0; full text included separately.
+
+This repair package does not redistribute the PPero sequence archive or source
+code. It includes an independently implemented repair to the user-supplied
+bi-profile evaluation code. Original input files must be acquired with their
+provenance recorded before analysis. Preserve upstream notices when adding data.
+The MIT licence applies to original code, not to third-party data or manuscripts.
+
+Changes to the user-supplied code
+Supervised profiles are fitted inside each tuning and calibration training split.
+Group boundaries are respected at each split. Invalid residues and short sequences
+are rejected instead of silently deleted or padded. Synthetic regression tests
+are separated from scientific validation. No manuscript results are claimed from
+these code tests. Scientific evaluation of this repair has not been run.
+
+PPero's training sequences cannot serve as an independent test set for PPero.
+This package does not claim a head-to-head comparison with PPero.

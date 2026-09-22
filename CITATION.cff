@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "Please cite the released version of this software and the PPero data source."
+type: software
+title: "PeroxisomeAI analysis pipeline"
+authors:
+  - given-names: "Ebenezer Kweku"
+    family-names: "Ntiriakwa"
+    email: "kntiriakwa@yahoo.com"
+    affiliation: "University of Hamburg, Hamburg, Germany"
+    orcid: "https://orcid.org/0009-0008-7921-8200"
+license: MIT
+repository-code: "https://github.com/Ebenkntiri/PeroxisomeAI"
+references:
+  - type: article
+    title: "PPero, a Computational Model for Plant PTS1 Type Peroxisomal Protein Prediction"
+    authors:
+      - family-names: Wang
+        given-names: Jue
+      - family-names: Wang
+        given-names: Yejun
+      - family-names: Gao
+        given-names: Caiji
+      - family-names: Jiang
+        given-names: Liwen
+      - family-names: Guo
+        given-names: Dianjing
+    journal: "PLOS ONE"
+    volume: "12"
+    issue: "1"
+    year: 2017
+    doi: "10.1371/journal.pone.0168912"

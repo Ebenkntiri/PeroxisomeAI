@@ -1,6 +1,6 @@
 # PeroxisomeAI evaluation repair
 
-Author: Ebenezer Kweku Ntiriakwa, University of Hamburg, Hamburg, Germany.  
+Author: Ebenezer Kweku Ntiriakwa, Independent researcher.  
 Contact: kntiriakwa@yahoo.com  
 ORCID: https://orcid.org/0009-0008-7921-8200
 
